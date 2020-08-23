@@ -9,7 +9,6 @@ body {
 }
 
 .navbar{
-    background-color: #F5FFFC;
     display: flex;
     align-items: center;
     height: 70px;
@@ -91,3 +90,96 @@ h2{
     font-weight: 700;
 }
 
+#story{
+    position: relative;
+    align-items: center;
+}
+
+#python {
+    background-image: url("images/forest-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #A8D5C0;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    z-index: 10;
+}
+
+#java{
+    background-image: url("images/kitchen-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-color: #E2EDEE;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#ruby{
+    background-image: url("images/cave-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #78789F;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.story-text img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+
+.story-img img{
+    float: right;
+    max-width: 100%;
+}
+
+.story-girl img{
+    max-width: 100%;
+}
+.story-girl{
+    position: -webkit-sticky; 
+    position: sticky;
+    top:10rem;
+    left:70rem;
+    z-index: 100;
+    margin-top: 50vh;
+}
+
+/* .story-pin{
+    position: sticky;
+    bottom: 0;
+    left: 15rem; 
+} */
+
+.story-pin{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 35vh;
+    left: 2rem;
+    z-index: 100;
+    margin-bottom: 100px;
+}
+
+.story-pin img{
+    max-width: 100%;
+    z-index: 100;
+}
+
+
+.transition{
+    position: relative;
+    height: 50vh;
+}
+
+.transition-2 {
+    height: 50vh;
+}

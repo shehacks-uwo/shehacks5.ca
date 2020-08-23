@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Required meta tags -->
@@ -13,7 +14,9 @@
         <!-- Title -->
         <title>SheHacks</title>  
         <link rel = "icon" href =  "../assets/icon.ico" type = "image/x-icon"> 
-       
+
+        <!-- AOS animations -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     </head>
@@ -63,7 +66,75 @@
                 </div>
                 <div class="col-lg-2"></div>
             </div>
-    
+
+            
+
+            <div id="story">
+                
+                <div class="col-md-4 story-girl">
+                    <img src="images/girl-fighting.png">
+                </div>
+                
+                
+
+                <div class="transition" 
+                    style="background: linear-gradient(180deg, #A8D5C0 -13.74%, #F5FFFC 100%); transform: rotate(-180deg); ">
+                </div>
+                
+                    
+                <div id="python">
+                    <div class="col-md-4 story-img lax" data-aos="fade-right" data-lax-preset="fadeOut">
+                        <img id="python-img" src="images/python.png">
+                    </div>
+                    <div class="col-md-4 story-text">
+                        <img src="images/python-text.png">
+                    </div>
+                </div>
+
+                <div class="transition-2" style="background: linear-gradient(180deg, #A8D5C0 -13.74%, #F5FFFC 100%);"></div>
+
+                <div class="col-md-4 lax story-pin" data-lax-preset="driftRight-1000 zoomOut-0.15" style="background: none">
+                    <img src="images/python-pin.png">
+                </div>
+
+                <div id="java">
+                    <div class="col-md-4 story-img lax" data-aos="fade-right" data-lax-preset="fadeOut">
+                        <img src="images/java.png">
+                    </div>
+                    <div class="col-md-4 story-text">
+                        <img src="images/java-text.png">
+                    </div>
+                </div>
+
+                <div class="col-md-4 lax story-pin" data-lax-preset="driftRight-1025 zoomOut-0.15" style="background: none; padding-top:15px;">
+                    <img src="images/java-pin.png">
+                </div>
+
+                <div class="transition-2" style="background:  linear-gradient(180deg, #3D3C71 -13.74%, #F5FFFC 100%);  transform: rotate(-180deg);"></div>
+
+                <div id="ruby">
+                    <div class="col-md-4 story-img lax" data-aos="fade-right" data-lax-preset="fadeOut">
+                        <img src="images/ruby.png">
+                    </div>
+                    <div class="col-md-4 story-text">
+                        <img src="images/ruby-text.png">
+                    </div>
+                </div>
+
+                <div class="transition-2" style="background:  linear-gradient(180deg, #3D3C71 -13.74%, #F5FFFC 100%);"></div>
+
+                <div class="col-md-4 lax story-pin" data-lax-preset="driftRight-1000 zoomOut-0.15" style="background: none; padding-top:35px;">
+                    <img src="images/ruby-pin.png">
+                </div>
+                <div style="height:150vh"></div>
+
+            </div>
+            <div style="height:100vh"></div>
+
+
+
+
+               
         </section>
 
         <section id="about">
@@ -92,5 +163,28 @@
 
 
     </body>
+
+
+    
+    <!--AOS animations-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Lax.js -->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script>
+        window.onload = function() {
+        lax.setup() // init
+
+        const updateLax = () => {
+            lax.update(window.scrollY)
+            window.requestAnimationFrame(updateLax)
+        }
+
+        window.requestAnimationFrame(updateLax)
+    }
+    </script>
 
 </html>
