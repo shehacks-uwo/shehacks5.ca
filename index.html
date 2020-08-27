@@ -15,176 +15,537 @@
         <title>SheHacks</title>  
         <link rel = "icon" href =  "../assets/icon.ico" type = "image/x-icon"> 
 
-        <!-- AOS animations -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--Slick slider-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
 
-
+        <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+        <script src="https://kit.fontawesome.com/db7dd3a66d.js" crossorigin="anonymous"></script>
     </head>
 
+    <!--Body Starts-->
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <!--navbar start-->
+        <header>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top">
+                <div class = "container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a href="#landing" class="navbar-brand"><img src="images/nav-logo.png" alt="she/hacks"></a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="navbar-toggler-icon"></i>
+                    </button>  
         
-        <nav class="navbar navbar-expand-md fixed-top navbar-light scrolling-navbar">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <a href="#landing" class="navbar-brand"><img src="images/logo.png" alt=""></a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="navbar-toggler-icon"></i>
-                </button>  
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul style="justify-content: flex-end;" class="navbar-nav mr-auto w-100 clearfix">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">COMMUNITY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SPONSORS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
-                        </li>
-                    </ul>
+                    <!-- collapse navbar -->
+                    <div class="navbar-collapse collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto w-100 clearfix">
+                            <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#community">COMMUNITY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#sponsors">SPONSOR</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
             
-        <section id="landing">
-
-            <div class="row content">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-5 col-md-12">
-                    <h1>SheHacks V</h1>
-                    <h6><img src="https://img.icons8.com/metro/26/000000/wifi.png"/> January 8-10, 2021</h6>
-                    <h4>To become the ultimate hacker...</h4>
-                    <p>Collect your tools and get ready to overcome challenges!</p>
-                    <br>
-                    <p><img src="https://img.icons8.com/clouds/30/000000/down.png"/>SCROLL</p>
-                </div>
-                <div class="col-lg-3 col-md-8 col-sm-10 hero">
-                    <img src="images/girl-1.png">
-                </div>
-                <div class="col-lg-2"></div>
-            </div>
-
-            
-
-            <div id="story">
-                
-                <div class="col-md-4 story-girl">
-                    <img src="images/girl-fighting.png">
-                </div>
-                
-                
-
-                <div class="transition" 
-                    style="background: linear-gradient(180deg, #A8D5C0 -13.74%, #F5FFFC 100%); transform: rotate(-180deg); ">
-                </div>
-                
-                    
-                <div id="python">
-                    <div class="col-md-4 story-img lax" data-aos="fade-right" data-lax-preset="fadeOut">
-                        <img id="python-img" src="images/python.png">
-                    </div>
-                    <div class="col-md-4 story-text">
-                        <img src="images/python-text.png">
-                    </div>
-                </div>
-
-                <div class="transition-2" style="background: linear-gradient(180deg, #A8D5C0 -13.74%, #F5FFFC 100%);"></div>
-
-                <div class="col-md-4 lax story-pin" data-lax-preset="driftRight-1000 zoomOut-0.15" style="background: none">
-                    <img src="images/python-pin.png">
-                </div>
-
-                <div id="java">
-                    <div class="col-md-4 story-img lax" data-aos="fade-right" data-lax-preset="fadeOut">
-                        <img src="images/java.png">
-                    </div>
-                    <div class="col-md-4 story-text">
-                        <img src="images/java-text.png">
-                    </div>
-                </div>
-
-                <div class="col-md-4 lax story-pin" data-lax-preset="driftRight-1025 zoomOut-0.15" style="background: none; padding-top:15px;">
-                    <img src="images/java-pin.png">
-                </div>
-
-                <div class="transition-2" style="background:  linear-gradient(180deg, #3D3C71 -13.74%, #F5FFFC 100%);  transform: rotate(-180deg);"></div>
-
-                <div id="ruby">
-                    <div class="col-md-4 story-img lax" data-aos="fade-right" data-lax-preset="fadeOut">
-                        <img src="images/ruby.png">
-                    </div>
-                    <div class="col-md-4 story-text">
-                        <img src="images/ruby-text.png">
-                    </div>
-                </div>
-
-                <div class="transition-2" style="background:  linear-gradient(180deg, #3D3C71 -13.74%, #F5FFFC 100%);"></div>
-
-                <div class="col-md-4 lax story-pin" data-lax-preset="driftRight-1000 zoomOut-0.15" style="background: none; padding-top:35px;">
-                    <img src="images/ruby-pin.png">
-                </div>
-                <div style="height:150vh"></div>
-
-            </div>
-            <div style="height:100vh"></div>
-
-
-
-
-               
-        </section>
-
         <section id="about">
+            <div class="container">
+                <!--second splash-->
+                <div class="row content reverse-col">
+                    <div class="col-lg-7 vertical-center">
+                        <div>
+                            <h4>Welcome to SheHacks V!</h4>
+                            <h1>We'll build you up from<span class="orange-text"> zero to hero.</span></h1>
+                            <button class="splash-button"><b>Stay in the loop</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="images/arrow-right.png"></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 horizontal-center">
+                        <img src="images/second-splash.png" class="w-100 py-5" alt="shehacks">
+                    </div>
+                </div> 
+            </div>
+
+            <!--about-->
+            <div class="container strip p-4">
+                <div class="row">
+                    <div class="card w-100 m-4">
+                        <div class="row reverse-col">
+                            <div class="col-lg-6 col-md-12 vertical-center row m-auto py-3">
+                                <h3 class="orange-text">Canada's largest all-female hackathon</h3>
+                                <p class="py-3">
+                                    Join hundreds of female and non-binary students online to make your next move in tech. 
+                                    Regardless of your experience, background, or gender identity, 
+                                    turn your tech ideas into reality in just 36 hours.
+                                </p>
+                                <div class="d-flex vertical-center">
+                                    <h5 style="padding: 2px; border: #61CEBA solid; border-radius: 100%; background: #61CEBA; color: white;"><i class="fas fa-star"></i></h5>
+                                    <h5 class="teal-text pl-3">Finalists join us for an in-person pitch!</h5>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-6 col-md-12 vertical-center">
+                                <img src="images/three-girls.png" alt="shehacks" class="py-3 w-100 h-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--new this year-->
+            <div class="container strip">
+                <div class="horizontal-center">
+                    <h2 class="pb-5">New This Year!</h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="circle" style="background-color:#61CEBA"></div>
+                            <div class="card event-card horizontal-center">
+                                <br><h3 class="teal-text">
+                                    Hacker Olympics
+                                </h3>
+                                <br>
+                                <p>
+                                   <b>An alternate competition stream for beginner hackers.</b><br><br>
+                                   Teams of 4-5 beginner hackers will compete in 3 coding sprints based on our workshops.                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="circle" style="background-color:#144256"></div>
+                            <div class="card event-card horizontal-center">
+                                <br><h3>
+                                    #Zero2Hero Panel
+                                </h3>
+                                <br>
+                                <p>
+                                   <b>Experienced hackers will share their coding journies.</b><br><br>
+                                   Get the opportunity to share your story and showcase your skills with sponsors and fellow hackers!                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="circle" style="background-color:#FF7A60"></div>
+                            <div class="card event-card horizontal-center">
+                                <br><h3 class="orange-text">
+                                    Speed Networking
+                                </h3>
+                                <br>
+                                <p>
+                                   <b>Get a chance to network with other participants online.</b><br><br>
+                                   You will be matched up with one of our sponsors, mentors, or other hackers for a short video chat.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- past highlights-->
+            <div class="container strip">
+                <div class="horizontal-center">
+                    <h2 class="orange-text pb-5">Past Highlights</h2>
+
+                    <!--slick slider autoplay-->
+                    <div class="carousel w-100">
+                        <div><img src="images/events-slider/android.png"></div>
+                        <div><img src="images/events-slider/blockchain.png"></div>
+                        <div><img src="images/events-slider/google.png"></div>
+                        <div><img src="images/events-slider/hardware.png"></div>
+                        <div><img src="images/events-slider/pitch.png"></div>
+                        <div><img src="images/events-slider/python.png"></div>
+                        <div><img src="images/events-slider/ux.png"></div>
+                        <div><img src="images/events-slider/html.png"></div>
+                    </div>
+
+                    <!--carousel fading oput sidebars-->
+                    <!-- <div class=fade-container>
+                        <div class="carousel-fade"></div>
+                        <div class="carousel-clear"></div>
+                        <div class="carousel-fade-right"></div>
+                    </div> -->
+                </div>
+                <!--meet our community start-->
+            </div>
+            <div class="container p-5">
+                <div class="horizontal-center pt-5" id="community">
+                    <h2>Meet our Community</h2>
+                </div>
+            </div>
             
         </section>
 
-        <section id="community">
+
+        <!--community continued-->
+        <section>
+            <img src="images/wave.svg" alt="" class="w-100 h-auto"> 
+            <div class="container strip p-5">
+                <h2 class="orange-text px-5 horizontal-center">Incredible Support From Industry Leaders and Mentors</h2>
+                
+
+                <!--Erin chapple-->
+                <div class="speaker-card card my-5">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-5 vertical-center">
+                            <img src="images/Erin.jpg">
+                        </div>
+                        <div class="col-lg-9 col-md-10 col-sm-12 col-12 vertical-center row m-auto py-3 px-5">
+                            <h3 class="w-100">Erin Chapple</h3>
+                            <p><b>Product Leader of Azure Compute at Microsoft</b></p>
+                            <p>Erin has contributed to over 15 operating system releases since 1998 - 
+                            building communities and supporting women is as core to her as operating systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--melissa sariffodeen-->
+                <div class="speaker-card card my-5">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-5 vertical-center">
+                            <img src="images/Sgt Johanie Maheu, Rideau Hall © OSGG, 2017.jpg">
+                        </div>
+                        <div class="col-lg-9 col-md-10 col-sm-12 col-12 vertical-center row m-auto py-3 px-5">
+                            <h3 class="w-100">Melissa Sariffodeen</h3>
+                            <p><b>CEO of Canada Learning Code</b></p>
+                            <p>Melissa taught herself how to build websites from scratch when she was 11.  
+                                She is dedicated to ensuring that women and youth have the skills that they need to thrive in today’s digital world. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="strip py-5">
+    
+                    <!--slick slider mentors-->
+                    <div class="carousel">
+                        <div>
+                            <img class="mentor" src="images/events-slider/android.png">
+                            <h4>Name</h4>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <img class="mentor" src="images/events-slider/android.png">
+                            <h4>Name</h4>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <img class="mentor" src="images/events-slider/android.png">
+                            <h4>Name</h4>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <img class="mentor" src="images/events-slider/android.png">
+                            <h4>Name</h4>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <img class="mentor" src="images/events-slider/android.png">
+                            <h4>Name</h4>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <img class="mentor" src="images/events-slider/android.png">
+                            <h4>Name</h4>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <img class="mentor" src="images/events-slider/android.png">
+                            <h4>Name</h4>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <img class="mentor" src="images/events-slider/android.png">
+                            <h4>Name</h4>
+                            <p>Description</p>
+                        </div>
+                    </div>
+    
+                    <!--carousel fading oput sidebars-->
+                    <!-- <div class=fade-container>
+                        <div class="carousel-fade"></div>
+                        <div class="carousel-clear"></div>
+                        <div class="carousel-fade-right"></div>
+                    </div> -->
+                </div>
+            </div>
+
+            
 
         </section>
 
-        <section id="sponsors">
+        <section id="bottom">
+            <section id="sponsors">
+                <div class="container horizontal-center strip p-5">
+                    <div>
+                        <h2 class="teal-text py-1">Help grow the impact!</h2>
+                        <p>Want to support women in tech?<br>Email us at hello@shehacks.ca</p>
+                        <button class="orange-button py-3"><b>Become a sponsor</b></button>
+                    </div>
+                    <!--gold sponsors-->
+                    <div class="row vertical-center">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 hvr-grow">
+                            <a href="https://jobs.bce.ca/bell/" target="_blank"><img src="images/sponsors/bell.png"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 hvr-grow">
+                            <a href="https://jobs.td.com/en-CA/" target="_blank"><img src="images/sponsors/Td.png"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 hvr-grow">
+                            <a href="https://www.ubisoft.com/en-us/careers/experience.aspx" target="_blank"><img src="images/sponsors/ubisoft.svg"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 hvr-grow">
+                            <a href="https://www.eng.uwo.ca/undergraduate/leadership-innovation/" target="_blank"><img src="images/sponsors/Darren Meister - Ivey.png"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 hvr-grow">
+                            <a href="https://bmocareers.com/" target="_blank"><img src="images/sponsors/BMO.png"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                            <div class="row hvr-grow">
+                                <a href="https://www.lendingloop.ca/careers" target="_blank"><img src="images/sponsors/lendingloop.png"></a>
+                            </div>
+                            <div class="row hvr-grow">
+                                <a href="https://cloud.google.com/" target="_blank"><img src="images/sponsors/Google-Cloud-Logo.png"></a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!--silver sponsors-->
+                    <div class="row vertical-center">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 hvr-grow">
+                            <a href="https://www.architech.ca/careers/" target="_blank"><img src="images/sponsors/1 Architech_Logo_BLK.png"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 hvr-grow">
+                            <a href="https://www.nextcanada.com/next-36/" target="_blank"><img src="images/sponsors/next36.png"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 hvr-grow">
+                            <a href="https://www.scotiabank.com/ca/en/personal.html" target="_blank"><img src="images/sponsors/scotiabank.png"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 hvr-grow">
+                            <a href="https://www.fdmgroup.com/en-ca/ca-home/" target="_blank"><img src="images/sponsors/FDM.png"></a>
+                        </div>
+                    </div>
+
+                    <!--bronze sponsors-->
+                    <div class="row vertical-center">
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="https://www.pwc.com/ca/en/careers.html" target="_blank"><img src="images/sponsors/PwC.png"></a>
+                        </div> 
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="https://mlh.io/" target="_blank"><img src="images/sponsors/MLH.png"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="https://github.com/" target="_blank"><img src="images/sponsors/github.png"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="https://cryptochicks.ca/" target="_blank"><img src="images/sponsors/cryptochicks.png"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="http://www.futurfund.org/" target="_blank"><img src="images/sponsors/futurfund.png"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="https://www.venasolutions.com/careers" target="_blank"><img src="images/sponsors/vena.png"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="https://get.agorize.com/" target="_blank"><img src="images/sponsors/agorize.png"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="https://www.bluecatnetworks.com/careers//" target="_blank"><img src="images/sponsors/bluecat.png"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow"><a href="https://divacup.com/careers-at-divacup-explore-a-career-at-diva-international/" target="_blank"><img src="images/sponsors/divacup.jpg"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="https://www.canadalearningcode.ca/" target="_blank"><img src="images/sponsors/canada-learning-code.png"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="https://movethedial.com/careers" target="_blank"><img src="images/sponsors/Move the Dial.png"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 hvr-grow">
+                            <a href="https://jobs.redbull.com/us-en" target="_blank"><img src="images/sponsors/redbull.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="history">
+
+            </section>
+
+            <section id="wits">
+                <div style="padding: 50px 0 50px 0;" >
+                    <div class="container vertical-center" >
+                        <div class="text-block col-lg-6 col-md-8 col-sm-12 col-12">
+                            <img src="images/wits/logo.png" class="py-4">
+                            <h3 style="color:#0A2338">Building a future for women* in tech</h3>
+                            <p style="color:#0A2338">WITS delivers a series of initiatives designed to inspire and equip. SheHacks is one of these!
+                                <br><br>
+                                We provide our community with access to informative panels, educationals, workshops and inspirational speakers.    
+                            </p><br>
+                            <button class="wits-button"><b>Join WITS</b></button>
+    
+                        </div>  
+                    </div>
+                    <img src="images/wits-border.svg" alt="" style="width:100%; position: absolute; margin-top: -20%;">
+                </div>
+            </section>
+            
+
+            <section id="faq">
+                <div class="container strip">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 horizontal-center py-5">
+                            <h2 class="orange-text">Frequently Asked Questions</h2>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-item-header">
+                                        What is a hackathon?
+                                    </div>
+                                    <div class="accordion-item-body">
+                                        <div class="accordion-item-body-content">
+                                            A hackathon is a design & coding sprint where “hackers” with both technical and non-technical backgrounds come together to build exciting projects. 
+                                            Throughout the hackathon, you will learn many new skills through workshops, meet like-minded peers, and network with sponsors and mentors. 
+                                            At the end of the weekend, you will get a chance to demo your project and maybe go home with some prizes!    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-item-header">
+                                        Is SheHacks V a virtual hackathon?
+                                    </div>
+                                    <div class="accordion-item-body">
+                                        <div class="accordion-item-body-content">
+                                            Yes and no! This year, SheHacks V will be a hybrid event, hosting both a virtual hackathon for our 500+ hackers as well as the chance for finalists to join us and our sponsors at an in-person awards ceremony. <br>
+                                            Our team is committed to organizing a hackathon that prioritizes the health and safety of our attendees, while ensuring a valuable experience for our hackers.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-item-header">
+                                        What is the in-person awards ceremony?
+                                    </div>
+                                    <div class="accordion-item-body">
+                                        <div class="accordion-item-body-content">
+                                            Five finalists for the Best Overall prize will be invited to join us at Western University to pitch their hacks and network with SheHacks sponsors. 
+                                            The in-person awards ceremony will happen one week after SheHacks, after teams get a chance to refine their pitches. 
+                                            The awards ceremony will be livestreamed for all participants.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-item-header">
+                                        I don’t know how to code. Can I still come?
+                                    </div>
+                                    <div class="accordion-item-body">
+                                        <div class="accordion-item-body-content">
+                                            Of course! The event is designed for first-time hackers to try something new. 
+                                            We actively encourage people from all backgrounds, disciplines, and majors to attend! 
+                                            We have workshops that’ll teach you everything you need to know as well as mentors to guide you along the way. 
+                                            Just bring yourself, a willingness to learn, and a positive attitude!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-item-header">
+                                        Does SheHacks cost anything?
+                                    </div>
+                                    <div class="accordion-item-body">
+                                        <div class="accordion-item-body-content">
+                                            SheHacks is absolutely FREE, due to our generous sponsors! 
+                                            You will have access to a plethora of tools and workshops to help you with your project. 
+                                            You can also look forward to receiving some swag goodies in the mail!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-item-header">
+                                        Do I need to come with a team?
+                                    </div>
+                                    <div class="accordion-item-body">
+                                        <div class="accordion-item-body-content">
+                                            You can come solo or with a team. If you already have a team (3-4 people), you can register with them. 
+                                            If you don't have a team but would like one, we can match you up with one before the event.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-item-header">
+                                        Can I still come if I’m not a woman+?
+                                    </div>
+                                    <div class="accordion-item-body">
+                                        <div class="accordion-item-body-content">
+                                            SheHacks is designed to be an inclusive space to support women and non-binary individuals who are interested in technology. 
+                                            As we’re focused on creating a talent pipeline from minorities in tech, this event is specifically created as a place for women+ to explore the tech industry in a supportive way. 
+                                            Otherwise, we welcome people of all genders to participate as a volunteer or mentor. 
+                                            Keep an eye out on our Facebook and website for more information.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-
-        <section id="history">
-
-        </section>
-
-        <section id="wits">
-
-        </section>
-
-        <section id="faq">
-
-        </section>
-
-
     </body>
 
-
-    
-    <!--AOS animations-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--slick carousel script-->
     <script>
-        AOS.init();
+        $('.carousel').slick({
+            slidesToShow: 5,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 3000,
+            cssEase:'linear',
+            infinite: true,
+            focusOnSelect: false,
+            pauseOnHover: true,
+            arrows:false,
+            dots:false,
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },                           
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }]
+        });
     </script>
 
-    <!-- Lax.js -->
-    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <!--faq script-->
     <script>
-        window.onload = function() {
-        lax.setup() // init
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
-        const updateLax = () => {
-            lax.update(window.scrollY)
-            window.requestAnimationFrame(updateLax)
-        }
-
-        window.requestAnimationFrame(updateLax)
-    }
+        accordionItemHeaders.forEach(accordionItemHeader => {
+            accordionItemHeader.addEventListener("click", event => {
+                accordionItemHeader.classList.toggle("active");
+                const accordionItemBody = accordionItemHeader.nextElementSibling;
+                if(accordionItemHeader.classList.contains("active")) {
+                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                }
+                else {
+                    accordionItemBody.style.maxHeight = 0;
+                }
+            });
+        });
     </script>
+
+    <!--Bootstrap jqueries-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </html>
