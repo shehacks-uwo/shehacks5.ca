@@ -1,37 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fullpage.min.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./fullpage.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>Fullpage</title>
-</head>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-<body>
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Title -->
+    <title>SheHacks</title>
+    <link rel="icon" href="../assets/icon.ico" type="image/x-icon" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav
+      class="navbar navbar-expand-md fixed-top navbar-light scrolling-navbar"
+    >
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a href="#landing" class="navbar-brand"
+          ><img src="images/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul
+            style="justify-content: flex-end"
+            class="navbar-nav mr-auto w-100 clearfix"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COMMUNITY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SPONSORS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   
+  
+    <!-- Fullpage div for scroll function starts here -->
     <div id="fullpage">
-        <section class="section s1">
-            <h1>Page1</h1>
-        </section>
-        <section class="section s2">
-            <h1>Page2</h1>
-        </section>
-        <section class="section s3">
-            <h1>Page3</h1>
-        </section>
-        <section class="section s4">
-            <h1>Page4</h1>
-        </section>
+      
+      <!-- LANDING PAGE -->
+      <div class="section s1" id="landing">
+        <h1>
+          <div class="row content">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-5 col-md-12">
+              <img src="images/shehacks-title.png" />
+              <h6>
+                <img src="https://img.icons8.com/metro/26/000000/wifi.png" />
+                Virtual Hackathon | January 8-10, 2021
+              </h6>
+              <button id="landing-btn">Stay in the loop -></button>
+              <br />
+              <button id="scroll-anim">
+                <img
+                src="https://img.icons8.com/clouds/30/000000/down.png"
+                />
+                <p>SCROLL</p>
+            </button>
+            </div>
+            <div class="col-lg-3 col-md-8 col-sm-10 hero">
+              <img src="images/girl-1.png" />
+            </div>
+            <div class="col-lg-2"></div>
+          </div>
+        </h1>
+      </div>
+      
+      <!-- PYTHON PAGE -->
+      <section class="section s2">
+        <div class="story-text">
+          <div id="python">
+            <div class="story-girl">
+              <img src="images/girl-fighting.png" />
+            </div>
+            <div>
+              <img id="python-img" src="images/python.png" />
+            </div>
+            <div id="tween-text" class="col-md-4 story-text">
+              <img src="images/python-text.png" />
+            </div>
+
+            <img src="images/python-pin.png" />
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- JAVA PAGE -->
+      <section class="section s3">
+        <div class="story-text">
+          <div id="java">
+            <div class="story-girl">
+              <img src="images/girl-fighting.png" />
+            </div>
+            <div>
+              <img id="java-img" src="images/java.png" />
+            </div>
+            <div id="tween-text" class="col-md-4 story-text">
+              <img src="images/java-text.png" />
+            </div>
+              <img src="images/java-pin.png" />
+            </div>
+          </div>
+
+        </di>
+      </section>
+
+      <!-- RUBY PAGE -->
+      <section class="section s4">
+        <div class="story-text">
+          <div id="ruby">
+            <div class="story-girl">
+              <img src="images/girl-fighting.png" />
+            </div>
+            <div>
+              <img id="ruby-img" src="images/ruby.png" />
+            </div>
+            <div id="tween-text" class="col-md-4 story-text">
+              <img src="images/ruby-text.png" />
+            </div>
+            <div>
+              <img src="images/ruby-pin.png" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
     <script src="./fullpage.min.js"></script>
     <script src="app.js"></script>
-</body>
+    <script src="anime.min.js"></script>
+  </body>
+  <!--AOS animations-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
+  <!-- Lax.js -->
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script>
+    window.onload = function () {
+      lax.setup(); // init
+
+      const updateLax = () => {
+        lax.update(window.scrollY);
+        window.requestAnimationFrame(updateLax);
+      };
+
+      window.requestAnimationFrame(updateLax);
+    };
+  </script>
 </html>
