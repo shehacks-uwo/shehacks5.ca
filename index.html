@@ -25,8 +25,9 @@
         <script src="https://kit.fontawesome.com/db7dd3a66d.js" crossorigin="anonymous"></script>
     </head>
 
+
     <!--Body Starts-->
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body id="landing" data-spy="scroll" data-target=".navbar" data-offset="50">
 
         <!--navbar start-->
         <header>
@@ -50,7 +51,7 @@
                 </div>
             </nav>
         </header>
-            
+
         <section id="about">
             <div class="container">
                 <!--second splash-->
@@ -59,11 +60,11 @@
                         <div>
                             <h4>Welcome to SheHacks V!</h4>
                             <h1>We'll build you up from<span class="orange-text"> zero to hero.</span></h1>
-                            <button class="splash-button"><b>Stay in the loop</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="images/arrow-right.png"></button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScanON57hXY-j81BxFZpLxypmyjLPC2L1qfP2SxVXxZLsqajQ/viewform" target="_blank"><button class="splash-button"><b>Stay in the loop</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="images/arrow-right.png"></button></a>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-12 horizontal-center">
-                        <img src="images/second-splash.png" class="w-100 py-5" alt="shehacks">
+                        <img src="images/second-splash.png" class="w-100 py-5 " alt="shehacks">
                     </div>
                 </div> 
             </div>
@@ -95,8 +96,8 @@
             </div>
 
             <!--new this year-->
-            <div class="container strip">
-                <div class="horizontal-center">
+            <div class="container">
+                <div class="horizontal-center strip">
                     <h2 class="pb-5">New This Year!</h2>
                     <div class="row">
                         <div class="col-lg-4 col-md-12">
@@ -138,9 +139,9 @@
                     </div>
                 </div>
             </div>
-                
+
             <!-- past highlights-->
-            <div class="container strip">
+            <div class="container py-5">
                 <div class="horizontal-center">
                     <h2 class="orange-text pb-5">Past Highlights</h2>
 
@@ -163,28 +164,99 @@
                         <div class="carousel-fade-right"></div>
                     </div> -->
                 </div>
-                <!--meet our community start-->
-            </div>
-            <div class="container p-5">
-                <div class="horizontal-center pt-5" id="community">
-                    <h2>Meet our Community</h2>
-                </div>
-            </div>
-            
+            </div>   
         </section>
 
+        <img src="images/wave.svg" class="w-100 mb-5">
+
+        <!--meet our community start-->
+        <!--testimonials-->
+        <section id="community" class="my-5">
+            <div class="horizontal-center pt-5">
+                <h2>Meet our Community</h2>
+            </div>
+            <div class="container py-5" id="testimonials" >
+                <!--testimonials-slider starts-->
+                <div class="testimonials-slider">
+
+                    <div class="testimonial-card m-3 horizontal-center">
+                        <img src="images/testimonials/laura.png" class="testimonial-image">
+                        <br>
+                        <h5 class="teal-text">Laura Popa</h5>
+                        <p>Western University</p>
+                        <p class="testimonial-content" style="text-align:left;">SheHacks was the first hackathon that I attended when I was in first year computer science at Western University. 
+                            Being in such an inclusive and educational environment around so many incredible women left me with a sense of confidence in my technical abilities that I never felt before.
+                        </p>
+                    </div>
+                    <div class="testimonial-card m-3 horizontal-center">
+                        <img src="images/testimonials/samia-anwar.png" class="testimonial-image">
+                        <br>
+                        <h5 class="teal-text">Samia Anwar</h5>
+                        <p>McMaster University</p>
+                        <p class="testimonial-content" style="text-align:left;">With just surface-level knowledge of Python and Java, 
+                            I returned to the London GreyHound bus station on Sunday night with a beautiful website coded through HTML, CSS, JavaScript, and integrated with a Google API. 
+                            All of this I learned (and relearned) within 24 hours thanks to the friends and mentors I gained at SheHacks. 
+                        </p>
+                    </div>
+                    <div class="testimonial-card m-3 horizontal-center">
+                        <img src="images/testimonials/emily.png" class="testimonial-image">
+                        <br>
+                        <h5 class="teal-text">Emily Wang</h5>
+                        <p>University of Waterloo</p>
+                        <p class="testimonial-content" style="text-align:left;">At most hackathons, I've always felt a sense of imposter syndrome and intimidation. SheHacks was a supportive and welcoming event
+                        that made everyone, regardless of skill level or gender, feel like they had a place in the tech world.</p>
+                    </div>
+                    <div class="testimonial-card m-3 horizontal-center">
+                        <img src="images/testimonials/niveda.png" class="testimonial-image">
+                        <br>
+                        <h5 class="teal-text">Niveda Bala</h5>
+                        <p>Western University</p>
+                        <p class="testimonial-content" style="text-align:left;">As a Medical Sciences student making a career shift to tech, the SheHacks environment gave me access to skills and empowering mentors 
+                            that helped me get my start at an early stage startup.</p>
+                    </div>
+                    <div class="testimonial-card m-3 horizontal-center">
+                        <img src="images/testimonials/tolu.png" class="testimonial-image">
+                        <br>
+                        <h5 class="teal-text">Tolu Aibana</h5>
+                        <p>Western University</p>
+                        <p class="testimonial-content" style="text-align:left;">SheHacks was a great opportunity to participate in my first Hackathon. Since I had no experience 
+                        coding, I was too intimidated to join a Hackathon...After SheHacks, I felt more confident in my abilities in tech and since have been taking courses and 
+                    workshops to improve my coding skills! </p>
+                    </div>
+
+                    <div class="testimonial-card m-3 horizontal-center">
+                        <img src="images/testimonials/jessica.png" class="testimonial-image">
+                        <br>
+                        <h5 class="teal-text">Jessica Hu</h5>
+                        <p>Western University</p>
+                        <p class="testimonial-content" style="text-align:left;">SheHacks was the first hackathon I had ever attended and it was nothing like I had expected. It was incredibly beginner friendly, I got to see so many cool hacks and innovative ideas,
+                             I had the chance to network with tech company reps and attended lots of unique workshops.</p>
+                    </div>
+                    <div class="testimonial-card m-3 horizontal-center">
+                        <img src="images/testimonials/emily-bicknell.png" class="testimonial-image">
+                        <br>
+                        <h5 class="teal-text">Emily Bicknell</h5>
+                        <p>University of Waterloo</p>
+                        <p class="testimonial-content" style="text-align:left;">SheHacks was my first hackathon experience and it did not disappoint! 
+                            It was such a supportive environment, and everyone was rooting for each other’s success. 
+                            It was a fantastic opportunity to meet like minded individuals and learn from leaders in the tech community. 
+                            I came out of the experience with new skills and more confidence in my abilities. </p>
+                    </div>                    
+                </div>
+                <!--testimonials-slider ends-->
+            </div>            
+        </section>
 
         <!--community continued-->
         <section>
-            <img src="images/wave.svg" alt="" class="w-100 h-auto"> 
-            <div class="container strip p-5">
-                <h2 class="orange-text px-5 horizontal-center">Incredible Support From Industry Leaders and Mentors</h2>
+            <div class="container py-5 px-4">
+                <h2 class="orange-text horizontal-center">Incredible Support From Industry Leaders and Mentors</h2>
                 
 
                 <!--Erin chapple-->
                 <div class="speaker-card card my-5">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-5 vertical-center">
+                        <div class="col-lg-3 col-md-12 col-sm-12 col-12 p-5 vertical-center">
                             <img src="images/Erin.jpg">
                         </div>
                         <div class="col-lg-9 col-md-10 col-sm-12 col-12 vertical-center row m-auto py-3 px-5">
@@ -200,7 +272,7 @@
                 <!--melissa sariffodeen-->
                 <div class="speaker-card card my-5">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-5 vertical-center">
+                        <div class="col-lg-3 col-md-12 col-sm-12 col-12 p-5 vertical-center">
                             <img src="images/Sgt Johanie Maheu, Rideau Hall © OSGG, 2017.jpg">
                         </div>
                         <div class="col-lg-9 col-md-10 col-sm-12 col-12 vertical-center row m-auto py-3 px-5">
@@ -217,45 +289,64 @@
     
                     <!--slick slider mentors-->
                     <div class="carousel">
-                        <div>
-                            <img class="mentor" src="images/events-slider/android.png">
-                            <h4>Name</h4>
-                            <p>Description</p>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/elena-cryptochicks.jfif">
+                            <br><h6><b>Elena Sinelnikova</b></h6>
+                            <p>CEO of Cryptochicks</p>
                         </div>
-                        <div>
-                            <img class="mentor" src="images/events-slider/android.png">
-                            <h4>Name</h4>
-                            <p>Description</p>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/olga-liquidus.jfif">
+                            <br><h6><b>Olga Plokhuta</b></h6>
+                            <p>Marketing Manager at Liquidus</p>
                         </div>
-                        <div>
-                            <img class="mentor" src="images/events-slider/android.png">
-                            <h4>Name</h4>
-                            <p>Description</p>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/natalia-pitney-bowes.jfif">
+                            <br><h6><b>Natalia Ameline</b></h6>
+                            <p>Senior Director, Global Business Analytics at Pitney Bowes</p>
                         </div>
-                        <div>
-                            <img class="mentor" src="images/events-slider/android.png">
-                            <h4>Name</h4>
-                            <p>Description</p>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/dilesha-oui-stem.jpg">
+                            <br><h6><b>Dilesha Stelmach</b></h6>
+                            <p>CEO of Oui STEM Academy</p>
                         </div>
-                        <div>
-                            <img class="mentor" src="images/events-slider/android.png">
-                            <h4>Name</h4>
-                            <p>Description</p>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/huda-idrees.jpg">
+                            <br><h6><b>Huda Idrees</b></h6>
+                            <p>CEO of Dot Health</p>
                         </div>
-                        <div>
-                            <img class="mentor" src="images/events-slider/android.png">
-                            <h4>Name</h4>
-                            <p>Description</p>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/darren-meister.jpg">
+                            <br><h6><b>Darren Meister</b></h6>
+                            <p>Chair in Engineering Leadership and Innovation at Ivey</p>
                         </div>
-                        <div>
-                            <img class="mentor" src="images/events-slider/android.png">
-                            <h4>Name</h4>
-                            <p>Description</p>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/nancy-nguyen.jfif">
+                            <br><h6><b>Nancy Nguyen</b></h6>
+                            <p>Manager of Product Design at Voices.com</p>
                         </div>
-                        <div>
-                            <img class="mentor" src="images/events-slider/android.png">
-                            <h4>Name</h4>
-                            <p>Description</p>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/sarah-sun.jfif">
+                            <br><h6><b>Sarah Sun</b></h6>
+                            <p>Chief Data Strategist at Goldspot Discoveries Inc.</p>
+                        </div>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/parshati-patel.jfif">
+                            <br><h6><b>Parshati Patel</b></h6>
+                            <p>Research Professor at Western University</p>
+                        </div><div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/rachel-bartholomew.webp">
+                            <br><h6><b>Rachel Bartholomew</b></h6>
+                            <p>CEO of Hyivy Health</p>
+                        </div>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/eric-janssen.jpg">
+                            <br><h6><b>Eric Janssen</b></h6>
+                            <p>Entrepreneurship Professor at Ivey</p>
+                        </div>
+                        <div class="horizontal-center mentor-container">
+                            <img class="mentor h-75 w-75 m-auto" src="images/mentors/nicole-haggerty.jpg">
+                            <br><h6><b>Nicole Haggerty</b></h6>
+                            <p>ASsociate Professor at Ivey</p>
                         </div>
                     </div>
     
@@ -267,18 +358,198 @@
                     </div> -->
                 </div>
             </div>
-
-            
-
         </section>
 
         <section id="bottom">
-            <section id="sponsors">
+            <section id="history">
+                <div class="w-100 py-5" style="background-color: #144256">
+                    <h2 class="horizontal-center w-100" style="color: white" id="history-title">History of SheHacks</h2>
+                </div>
+
+                <div class="container py-5">
+                    <div class="history-slider py-5">
+                        <div class="card p-5 m-2" title="2017">
+                            <div class="container history-card">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 history-img p-4">
+                                        <img src="images/history/sh1.svg">
+                                        <br>
+                                        <img src="images/history/sh1-caption.svg">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 py-4 history-content">
+                                        <div class="row">
+                                            <h3 style="color: black;">Welcome to SheHacks I!</h3>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                                <img src="images/history/woman-icon-1.png" alt="" class="history-icon">
+                                                <p class="history-body-text">
+                                                    <b>&nbsp&nbsp60&nbsp</b>hackers
+                                                </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/project-icon-1.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp11&nbsp</b>projects
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/sponsors-icon-1.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp6&nbsp</b>sponsors
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/prizes-icon-1.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp$450&nbsp</b>in prizes
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="card p-5 m-2" title="2018" style="background-color: #F5BEBE">
+                            <div class="container history-card white-border">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 history-img p-4">
+                                        <img src="images/history/sh2.png">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 py-4 history-content" style="color: #282E4F">
+                                        <div class="row">
+                                            <h3 style="color: #282E4F;">Welcome to SheHacks II!</h3>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                                <img src="images/history/woman-icon-2.png" alt="" class="history-icon">
+                                                <p class="history-body-text">
+                                                    <b>&nbsp&nbsp167&nbsp</b>hackers
+                                                </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/new-icon-2.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp90%&nbsp</b>new hackers
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/time-icon-2.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp12h&nbsp</b>hackathon
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/prizes-icon-2.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp$5K&nbsp</b>in prizes
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="card p-5 m-2 sh3" title="2019">
+                            <div class="container history-card">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-0 col-0 history-img p-4">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 py-4 history-content" style="color: white">
+                                        <div class="row">
+                                            <h3 style="color: white;">Welcome to SheHacks III!</h3>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                                <img src="images/history/woman-icon-3.png" alt="" class="history-icon">
+                                                <p class="history-body-text">
+                                                    <b>&nbsp&nbsp300&nbsp</b>hackers
+                                                </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/workshops-icon-3.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp10&nbsp</b>workshops
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/project-icon-3.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp53h&nbsp</b>projects
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/prizes-icon-3.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp$5.6K&nbsp</b>in prizes
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-5 m-2" title="2020" style="background-color: #F3F1E4">
+                            <div class="container history-card">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 history-img p-4">
+                                        <img src="images/history/sh4.png">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 py-4 history-content" style="color: #0E2337">
+                                        <div class="row">
+                                            <h3 style="color: #E87153;">Welcome to SheHacks IV!</h3>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                                <img src="images/history/mlh-icon-4.png" alt="" class="history-icon">
+                                                <p class="history-body-text">
+                                                    <b>&nbsp&nbspMLH&nbsp</b>certified
+                                                </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/time-icon-4.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp24h&nbsp</b>hackathon
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/workshops-icon-4.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp14&nbsp</b>workshops
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="row vertical-center">
+                                            <img src="images/history/prizes-icon-4.png" alt="" class="history-icon">
+                                            <p class="history-body-text">
+                                                <b>&nbsp&nbsp$10K&nbsp</b>in prizes
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="sponsors" class="py-5 my-5">
                 <div class="container horizontal-center strip p-5">
-                    <div>
+                    <div class="pb-4">
                         <h2 class="teal-text py-1">Help grow the impact!</h2>
-                        <p>Want to support women in tech?<br>Email us at hello@shehacks.ca</p>
-                        <button class="orange-button py-3"><b>Become a sponsor</b></button>
+                        <p>Want to support women in tech?<br>Email us at <a href="mailto:wits.uwo@gmail.ca">hello@shehacks.ca</a></p>
+                        <a href="mailto:wits.uwo@gmail.ca"><button class="orange-button py-3"><b>Become a sponsor</b></button></a>
                     </div>
                     <!--gold sponsors-->
                     <div class="row vertical-center">
@@ -364,13 +635,9 @@
                 </div>
             </section>
 
-            <section id="history">
-
-            </section>
-
             <section id="wits">
-                <div style="padding: 50px 0 50px 0;" >
-                    <div class="container vertical-center" >
+                <div style="padding: 50px 0 50px 0;">
+                    <div class="container vertical-center">
                         <div class="text-block col-lg-6 col-md-8 col-sm-12 col-12">
                             <img src="images/wits/logo.png" class="py-4">
                             <h3 style="color:#0A2338">Building a future for women* in tech</h3>
@@ -378,7 +645,7 @@
                                 <br><br>
                                 We provide our community with access to informative panels, educationals, workshops and inspirational speakers.    
                             </p><br>
-                            <button class="wits-button"><b>Join WITS</b></button>
+                            <a href="http://wits-uwo.ca" target="_blank"><button class="wits-button"><b>Join WITS</b></button></a>
     
                         </div>  
                     </div>
@@ -387,13 +654,13 @@
             </section>
             
 
-            <section id="faq">
-                <div class="container strip">
+            <section id="faq" class="strip">
+                <div class="container py-5">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 horizontal-center py-5">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 horizontal-center p-5">
                             <h2 class="orange-text">Frequently Asked Questions</h2>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="accordion">
                                 <div class="accordion-item">
                                     <div class="accordion-item-header">
@@ -413,7 +680,7 @@
                                     </div>
                                     <div class="accordion-item-body">
                                         <div class="accordion-item-body-content">
-                                            Yes and no! This year, SheHacks V will be a hybrid event, hosting both a virtual hackathon for our 500+ hackers as well as the chance for finalists to join us and our sponsors at an in-person awards ceremony. <br>
+                                            Yes and no! This year, SheHacks V will be a hybrid event, hosting both a virtual hackathon for our 500+ hackers as well as the chance for finalists to join us and our sponsors at an in-person awards ceremony. <br><br>
                                             Our team is committed to organizing a hackathon that prioritizes the health and safety of our attendees, while ensuring a valuable experience for our hackers.
                                         </div>
                                     </div>
@@ -443,11 +710,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="accordion">
                                 <div class="accordion-item">
                                     <div class="accordion-item-header">
                                         Does SheHacks cost anything?
@@ -490,62 +752,105 @@
                 </div>
             </section>
         </section>
+
+        <footer>
+            <div class="horizontal-center white-text">
+                <h2 class="white-text">Still have questions?</h2>
+                <p>Shoot us an email at hello@shehacks.ca!</p>
+                <br>
+                <a href="https://www.facebook.com/wits.uwo/" target="_blank"><i class="fab fa-facebook-square m-2 white-text"></i></a>
+                <a href="https://www.instagram.com/wits.uwo/" target="_blank"><i class="fab fa-instagram-square m-2 white-text"></i></a>
+                <a href="mailto:hello@shehacks.ca" target="_blank"><i class="fas fa-envelope-square m-2 white-text"></i></a>
+            </div>
+        </footer>
+
+
+
     </body>
 
-    <!--slick carousel script-->
-    <script>
-        $('.carousel').slick({
-            slidesToShow: 5,
-            autoplay: true,
-            autoplaySpeed: 0,
-            speed: 3000,
-            cssEase:'linear',
-            infinite: true,
-            focusOnSelect: false,
-            pauseOnHover: true,
-            arrows:false,
-            dots:false,
-            responsive: [{
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 4,
-                }
-            },                           
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3,
-                }
-            }, {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                }
-            }]
-        });
-    </script>
-
-    <!--faq script-->
-    <script>
-        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
-
-        accordionItemHeaders.forEach(accordionItemHeader => {
-            accordionItemHeader.addEventListener("click", event => {
-                accordionItemHeader.classList.toggle("active");
-                const accordionItemBody = accordionItemHeader.nextElementSibling;
-                if(accordionItemHeader.classList.contains("active")) {
-                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-                }
-                else {
-                    accordionItemBody.style.maxHeight = 0;
-                }
+        <!--slick carousel script-->
+        <script>
+            $('.carousel').slick({
+                slidesToShow: 5,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 3000,
+                cssEase:'linear',
+                infinite: true,
+                focusOnSelect: false,
+                pauseOnHover: true,
+                arrows:false,
+                dots:false,
+                responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },                           
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }]
             });
-        });
-    </script>
 
-    <!--Bootstrap jqueries-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+            $('.history-slider').slick({
+                dots: true,
+                arrows:false,
+                slidesToShow: 1,
+                customPaging: function(slider, i) { 
+                    return '<button class="tab"><i class="fa fa-sort-down"></i><h4>' + $(slider.$slides[i]).attr('title') + '</h4></button>';
+                },
+            });
+    
+            $('.testimonials-slider').slick({
+                dots: true,
+                arrows:true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },                           
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                    }
+                }]
+            });
+        </script>
+    
+        <!--faq script-->
+        <script>
+            const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+    
+            accordionItemHeaders.forEach(accordionItemHeader => {
+                accordionItemHeader.addEventListener("click", event => {
+                    accordionItemHeader.classList.toggle("active");
+                    const accordionItemBody = accordionItemHeader.nextElementSibling;
+                    if(accordionItemHeader.classList.contains("active")) {
+                        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                    }
+                    else {
+                        accordionItemBody.style.maxHeight = 0;
+                    }
+                });
+            });
+        </script>
+    
+        <!--Bootstrap jqueries-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
 </html>
