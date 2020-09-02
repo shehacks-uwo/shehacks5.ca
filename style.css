@@ -8,23 +8,6 @@ body {
   box-sizing: border-box;
 }
 
-#anime-demo {
-  text-align: left;
-}
-
-.pin {
-  pointer-events: none;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  margin: 4px;
-  display: inline-block;
-}
-
-.controls {
-  margin-top: 100px;
-}
-
 #landing {
   background-image: url("images/landing-bg.png");
 
@@ -171,7 +154,6 @@ h2 {
   height: 100vh;
   display: flex;
   align-items: center;
-  z-index: 10;
 }
 
 #java {
@@ -198,27 +180,8 @@ h2 {
 
 .story-text img {
   display: block;
-  margin: auto;
   position: center;
   max-width: 100%;
-}
-
-.story-img img {
-  float: right;
-  max-width: 100%;
-}
-
-.python img {
-  max-width: 100%;
-}
-
-.python-girl {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10rem;
-  left: 80rem;
-  z-index: 100;
-  margin-top: 50vh;
 }
 
 .story-girl img {
