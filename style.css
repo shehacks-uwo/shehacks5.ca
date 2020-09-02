@@ -10,7 +10,6 @@ body {
 
 #landing {
   background-image: url("images/landing-bg.png");
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,7 +27,11 @@ body {
   border-radius: 15px;
   text-align: right;
 }
-
+#landing-question {
+  color: #3e3f5d;
+  padding: 80px 0px 0px 0px;
+  font-size: 18px;
+}
 .arrow {
   text-align: left;
   margin: 8% 0;
@@ -207,4 +210,13 @@ h2 {
 .story-pin img {
   max-width: 100%;
   z-index: 100;
+}
+
+#fp-nav.fp-right {
+  right: 10px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #fff;
 }

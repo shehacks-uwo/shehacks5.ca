@@ -1,6 +1,6 @@
 new fullpage("#fullpage", {
   //options here
-  autoScrolling: true,
+  navigation: true,
   onLeave: (origin, destination, direction) => {
     const section = destination.item;
     const storyText = section.querySelector("#tween-text");
