@@ -29,11 +29,7 @@ new fullpage("#fullpage", {
   },
 });
 
-$("button").onClick(function () {
-  $("html,body").animate(
-    {
-      scrollTop: $(".second").offset().top,
-    },
-    "slow"
-  );
+anime({
+  targets: ".pin",
+  translateX: 200,
 });

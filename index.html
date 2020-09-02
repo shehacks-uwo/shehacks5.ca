@@ -19,6 +19,7 @@
     <!-- Title -->
     <title>SheHacks</title>
     <link rel="icon" href="../assets/icon.ico" type="image/x-icon" />
+  
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -81,12 +82,12 @@
               </h6>
               <button id="landing-btn">Stay in the loop -></button>
               <br />
-              <button id="scroll-anim">
-                <img
-                src="https://img.icons8.com/clouds/30/000000/down.png"
-                />
-                <p>SCROLL</p>
-            </button>
+              <h6 style="color:black; padding: 20px 0px 0px 0px">Ready for the challenge?</h6>
+              <div class="arrow bounce">
+                <a href="">
+                  <img src="images/scroll-graphic.png"></img>
+                </a>
+              </div>
             </div>
             <div class="col-lg-3 col-md-8 col-sm-10 hero">
               <img src="images/girl-1.png" />
@@ -110,7 +111,10 @@
               <img src="images/python-text.png" />
             </div>
 
-            <img src="images/python-pin.png" />
+            <div id="anime-demo">
+              <img class="pin" src="images/python-pin.png" />            </div>
+            <div class="controls">
+            
           </div>
         </div>
       </section>
@@ -167,28 +171,9 @@
       integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
       crossorigin="anonymous"
     ></script>
-    <script src="./fullpage.min.js"></script>
-    <script src="app.js"></script>
+    <script src="fullpage.min.js"></script>
     <script src="anime.min.js"></script>
+    <script src="app.js"></script>
   </body>
-  <!--AOS animations-->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <!-- Lax.js -->
-  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-  <script>
-    window.onload = function () {
-      lax.setup(); // init
-
-      const updateLax = () => {
-        lax.update(window.scrollY);
-        window.requestAnimationFrame(updateLax);
-      };
-
-      window.requestAnimationFrame(updateLax);
-    };
-  </script>
+  
 </html>
