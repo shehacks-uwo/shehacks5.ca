@@ -23,53 +23,34 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav
-      class="navbar navbar-expand-md fixed-top navbar-light scrolling-navbar"
-    >
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <a href="#landing" class="navbar-brand"
-          ><img src="images/logo.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="navbar-toggler-icon"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul
-            style="justify-content: flex-end"
-            class="navbar-nav mr-auto w-100 clearfix"
-          >
-            <li class="nav-item active">
-              <a class="nav-link" href="#">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">COMMUNITY</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SPONSORS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar navbar-light navbar-expand-md fixed-top">
+          <div class = "container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a href="#landing" class="navbar-brand"><img src="images/nav-logo.png" alt="she/hacks"></a>
+              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="navbar-toggler-icon"></i>
+              </button>  
+  
+              <!-- collapse navbar -->
+              <div class="navbar-collapse collapse" id="navbarCollapse">
+                  <ul class="navbar-nav mr-auto w-100 clearfix">
+                      <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#community">COMMUNITY</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#sponsors">SPONSOR</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
 
    
     <!-- Fullpage div for scroll function starts here -->
     <div id="fullpage">
       
       <!-- LANDING PAGE -->
-      <div class="section s1" id="landing">
+      <div class="section s1" id="landing" data-anchor="welcome">
         <h1>
           <div class="row content">
             <div class="col-lg-2"></div>
@@ -95,7 +76,7 @@
       </div>
       
       <!-- PYTHON PAGE -->
-      <section class="section s2">
+      <section class="section s2" data-anchor="pythonfight">
           <div id="python">
           
             <div class="col-md-4">
@@ -113,7 +94,7 @@
       </section>
 
       <!-- JAVA PAGE -->
-      <section class="section s3">
+      <section class="section s3" data-anchor="javafight">
         <div id="java">
         
           <div class="col-md-4">
@@ -131,7 +112,7 @@
       </section>
 
       <!-- RUBY PAGE -->
-      <section class="section s4">
+      <section class="section s4" data-anchor="rubyfight">
         <div id="ruby">
           
           <div class="col-md-4">
@@ -147,7 +128,127 @@
           </div>
 
       </section>
+
+      <!--MAIN WEBSITE-->
+      <section class="section s5" data-anchor="main" id="about">
+        <div class="container">
+            <!--second splash-->
+            <div class="row content reverse-col">
+                <div class="col-lg-7 vertical-center">
+                    <div>
+                        <h4>Welcome to SheHacks V!</h4>
+                        <h1>We'll build you up from<span class="orange-text"> zero to hero.</span></h1>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScanON57hXY-j81BxFZpLxypmyjLPC2L1qfP2SxVXxZLsqajQ/viewform" target="_blank"><button class="splash-button"><b>Stay in the loop</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="images/arrow-right.png"></button></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 horizontal-center">
+                    <img src="images/second-splash.png" class="w-100 py-5 " alt="shehacks">
+                </div>
+            </div> 
+        </div>
+
+        <!--about-->
+        <div class="container strip p-4">
+            <div class="row">
+                <div class="card w-100 m-4">
+                    <div class="row reverse-col">
+                        <div class="col-lg-6 col-md-12 vertical-center row m-auto py-3">
+                            <h3 class="orange-text">Canada's largest all-female hackathon</h3>
+                            <p class="py-3">
+                                Join hundreds of female and non-binary students online to make your next move in tech. 
+                                Regardless of your experience, background, or gender identity, 
+                                turn your tech ideas into reality in just 36 hours.
+                            </p>
+                            <div class="d-flex vertical-center">
+                                <h5 style="padding: 2px; border: #61CEBA solid; border-radius: 100%; background: #61CEBA; color: white;"><i class="fas fa-star"></i></h5>
+                                <h5 class="teal-text pl-3">Finalists join us for an in-person pitch!</h5>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-12 vertical-center">
+                            <img src="images/three-girls.png" alt="shehacks" class="py-3 w-100 h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--new this year-->
+        <div class="container">
+            <div class="horizontal-center strip">
+                <h2 class="pb-5">New This Year!</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="circle" style="background-color:#61CEBA"></div>
+                        <div class="card event-card horizontal-center">
+                            <br><h3 class="teal-text">
+                                Hacker Olympics
+                            </h3>
+                            <br>
+                            <p>
+                               <b>An alternate competition stream for beginner hackers.</b><br><br>
+                               Teams of 4-5 beginner hackers will compete in 3 coding sprints based on our workshops.                                </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="circle" style="background-color:#144256"></div>
+                        <div class="card event-card horizontal-center">
+                            <br><h3>
+                                #Zero2Hero Panel
+                            </h3>
+                            <br>
+                            <p>
+                               <b>Experienced hackers will share their coding journies.</b><br><br>
+                               Get the opportunity to share your story and showcase your skills with sponsors and fellow hackers!                                </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="circle" style="background-color:#FF7A60"></div>
+                        <div class="card event-card horizontal-center">
+                            <br><h3 class="orange-text">
+                                Speed Networking
+                            </h3>
+                            <br>
+                            <p>
+                               <b>Get a chance to network with other participants online.</b><br><br>
+                               You will be matched up with one of our sponsors, mentors, or other hackers for a short video chat.                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- past highlights-->
+        <div class="container py-5">
+            <div class="horizontal-center">
+                <h2 class="orange-text pb-5">Past Highlights</h2>
+
+                <!--slick slider autoplay-->
+                <div class="carousel w-100">
+                    <div><img src="images/events-slider/android.png"></div>
+                    <div><img src="images/events-slider/blockchain.png"></div>
+                    <div><img src="images/events-slider/google.png"></div>
+                    <div><img src="images/events-slider/hardware.png"></div>
+                    <div><img src="images/events-slider/pitch.png"></div>
+                    <div><img src="images/events-slider/python.png"></div>
+                    <div><img src="images/events-slider/ux.png"></div>
+                    <div><img src="images/events-slider/html.png"></div>
+                </div>
+
+                <!--carousel fading oput sidebars-->
+                <!-- <div class=fade-container>
+                    <div class="carousel-fade"></div>
+                    <div class="carousel-clear"></div>
+                    <div class="carousel-fade-right"></div>
+                </div> -->
+            </div>
+        </div>   
+      </section>
+
+    <img src="images/wave.svg" class="w-100 mb-5">
+
     </div>
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
@@ -161,9 +262,9 @@
     ></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="fullpage.min.js"></script>
+    <script src="scrolloverflow.min.js"></script>
+    <script src="fullpage.min.js" ></script>
     <script src="anime.min.js"></script>
     <script src="app.js"></script>
   </body>
-  
 </html>
