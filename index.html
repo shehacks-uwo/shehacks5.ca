@@ -15,6 +15,9 @@
         <title>SheHacks</title>  
         <link rel = "icon" href =  "../assets/icon.ico" type = "image/x-icon"> 
 
+        <!--aos animations-->
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
         <!--Slick slider-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet"/>
@@ -70,7 +73,7 @@
             </div>
 
             <!--about-->
-            <div class="container strip p-4">
+            <div class="container strip p-4" data-aos="fade-up" data-aos-duration="700">
                 <div class="row">
                     <div class="card w-100 m-4">
                         <div class="row reverse-col">
@@ -100,7 +103,7 @@
                 <div class="horizontal-center strip">
                     <h2 class="pb-5">New This Year!</h2>
                     <div class="row">
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-4 col-md-12" data-aos="flip-up">
                             <div class="circle" style="background-color:#61CEBA"></div>
                             <div class="card event-card horizontal-center">
                                 <br><h3 class="teal-text">
@@ -112,7 +115,7 @@
                                    Teams of 4-5 beginner hackers will compete in 3 coding sprints based on our workshops.                                </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-4 col-md-12" data-aos="flip-up">
                             <div class="circle" style="background-color:#144256"></div>
                             <div class="card event-card horizontal-center">
                                 <br><h3>
@@ -124,7 +127,7 @@
                                    Get the opportunity to share your story and showcase your skills with sponsors and fellow hackers!                                </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-4 col-md-12" data-aos="flip-up">
                             <div class="circle" style="background-color:#FF7A60"></div>
                             <div class="card event-card horizontal-center">
                                 <br><h3 class="orange-text">
@@ -254,7 +257,7 @@
                 
 
                 <!--Erin chapple-->
-                <div class="speaker-card card my-5">
+                <div class="speaker-card card my-5" data-aos="fade-up">
                     <div class="row">
                         <div class="col-lg-3 col-md-12 col-sm-12 col-12 p-5 vertical-center">
                             <img src="images/Erin.jpg">
@@ -270,7 +273,7 @@
                 </div>
 
                 <!--melissa sariffodeen-->
-                <div class="speaker-card card my-5">
+                <div class="speaker-card card my-5" data-aos="fade-up">
                     <div class="row">
                         <div class="col-lg-3 col-md-12 col-sm-12 col-12 p-5 vertical-center">
                             <img src="images/Sgt Johanie Maheu, Rideau Hall © OSGG, 2017.jpg">
@@ -548,8 +551,8 @@
                 <div class="container horizontal-center strip p-5">
                     <div class="pb-4">
                         <h2 class="teal-text py-1">Help grow the impact!</h2>
-                        <p>Want to support women in tech?<br>Email us at <a href="mailto:wits.uwo@gmail.ca">hello@shehacks.ca</a></p>
-                        <a href="mailto:wits.uwo@gmail.ca"><button class="orange-button py-3"><b>Become a sponsor</b></button></a>
+                        <p>Want to support women in tech?<br>Email us at <a href="mailto:wits.uwo@gmail.com">wits.uwo@gmail.com</a></p>
+                        <a href="mailto:wits.uwo@gmail.com"><button class="orange-button py-3"><b>Become a sponsor</b></button></a>
                     </div>
                     <!--gold sponsors-->
                     <div class="row vertical-center">
@@ -645,7 +648,7 @@
                                 <br><br>
                                 We provide our community with access to informative panels, educationals, workshops and inspirational speakers.    
                             </p><br>
-                            <a href="http://wits-uwo.ca" target="_blank"><button class="wits-button"><b>Join WITS</b></button></a>
+                            <a href="http://wits-uwo.ca/" target="_blank"><button class="wits-button"><b>Join WITS</b></button></a>
     
                         </div>  
                     </div>
@@ -853,4 +856,6 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
+        <!--aos init-->
+        <script> AOS.init(); </script>
 </html>

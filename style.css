@@ -55,6 +55,11 @@ h5, h6{
     background: linear-gradient(to right, #7CD5C5 75%, #144256 25%);
 }
 
+.splash-button:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease 0s;
+}
+
 .orange-button{
     background-color: #FF7A60;
     color: white;
@@ -62,6 +67,11 @@ h5, h6{
     text-align: center;
     border: none;
     padding: 15px 20px;
+}
+
+.orange-button:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease 0s;
 }
 
 /* navbar */
@@ -431,6 +441,11 @@ nav {
     padding: 15px 20px;
 }
 
+.wits-button:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease 0s;
+}
+
 .text-block {
     position: relative;
     color: #0A2338;
@@ -668,6 +683,10 @@ footer{
 
 footer i {
     font-size: 3rem;
+}
+
+footer i:hover{
+    opacity: 0.5;
 }
 
 .testimonial-image{
