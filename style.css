@@ -439,6 +439,7 @@ nav {
     text-align: center;
     border: none;
     padding: 15px 20px;
+    z-index: 100;
 }
 
 .wits-button:hover{
