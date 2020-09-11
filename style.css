@@ -48,7 +48,7 @@ h5, h6{
 
 .splash-button{
     color: #144256;
-    padding:10px 15px;
+    padding:10px 15px 10px 15px;
     border:3px solid #144256;
     border-radius: 17px;
     border-right:5px;
@@ -130,6 +130,10 @@ nav {
     .content{
         min-height: 100vh;
     }
+
+    .content h4{
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width:991px){
@@ -139,6 +143,10 @@ nav {
     }
     .content{
         min-height: 100vh;
+    }
+
+    .content div{
+        padding: 5% 0;
     }
 }
 
@@ -257,7 +265,7 @@ nav {
 
 .circle {
     width: 200px;
-    height: 80px;
+    height: 90px;
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
     margin:auto;
 }
@@ -275,7 +283,7 @@ nav {
     
     .circle {
         width: 400px;
-        height: 150px;
+        height: 180px;
         margin: auto;
         margin-bottom: -100px;
 
@@ -293,7 +301,7 @@ nav {
     
     .circle {
         width:300px;
-        height: 100px;
+        height: 150px;
         margin:auto;
         margin-bottom: -100px;
     }
@@ -433,13 +441,14 @@ nav {
 
 
 .wits-button{
+    position: relative;
     background-color: #E57154;
     color: white;
     border-radius: 20px;
     text-align: center;
     border: none;
     padding: 15px 20px;
-    z-index: 100;
+    z-index: 14000;
 }
 
 .wits-button:hover{
