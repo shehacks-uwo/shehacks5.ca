@@ -729,9 +729,9 @@ footer i:hover{
 #testimonials .slick-prev:before, #testimonials .slick-next:before{
     color: #144256;
     opacity: 1;
-    width: 20px;
-    height: 20px;
+    font-size: 30px;
 }
+
 
 .testimonial-content{
     font-size: 0.9rem;
