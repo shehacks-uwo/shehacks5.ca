@@ -138,7 +138,7 @@ nav {
         padding:5%;
     }
     .content{
-        min-height: 80vh;
+        min-height: 100vh;
     }
 }
 
@@ -257,7 +257,7 @@ nav {
 
 .circle {
     width: 200px;
-    height: 100px;
+    height: 80px;
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
     margin:auto;
 }
@@ -275,7 +275,7 @@ nav {
     
     .circle {
         width: 400px;
-        height: 200px;
+        height: 150px;
         margin: auto;
         margin-bottom: -100px;
 
@@ -293,7 +293,7 @@ nav {
     
     .circle {
         width:300px;
-        height: 150px;
+        height: 100px;
         margin:auto;
         margin-bottom: -100px;
     }
@@ -311,7 +311,7 @@ nav {
     
     .circle {
         width: 50%;
-        height: 100px;
+        height: 70px;
         margin:auto;
         margin-bottom: -60px;
     }
@@ -472,7 +472,7 @@ nav {
     align-items: center;
     position: relative;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.2rem;
     border-bottom: grey solid 1px;
 }
@@ -688,6 +688,7 @@ footer i {
 
 footer i:hover{
     opacity: 0.5;
+    transition: all 0.3s ease 0s;
 }
 
 .testimonial-image{
@@ -719,6 +720,8 @@ footer i:hover{
 #testimonials .slick-prev:before, #testimonials .slick-next:before{
     color: #144256;
     opacity: 1;
+    width: 20px;
+    height: 20px;
 }
 
 .testimonial-content{
