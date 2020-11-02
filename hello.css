@@ -2,8 +2,6 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-y: scroll;
-    overflow-x: scroll;
 }
 body {
     background-color: #EFFEFF;
@@ -33,7 +31,6 @@ h5, h6{
 
 .white-text{
     color: white;
-    filter: drop-shadow(2px 4px 4px rgba(255,112,70,0.6));
 }
 
 .vertical-center{
@@ -111,7 +108,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: transparent;
+    background: white;
     padding: .5rem 1rem;
 }
 
@@ -158,33 +155,6 @@ nav {
     align-items: center;
 }
 
-#splash-screen {
-    background-image: url("images/shehacksv2.png"), url("images/splash-screen2.png");
-    background-size: 85%, cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  
-    height: 100vh;
-    display:flex;
-    
-    z-index: 10;
-}
-
-@media (max-width: 768px){
-    #splash-screen {
-        background-image: url("images/shehacksv.png"), url("images/splash-screen2.png");
-        background-size: 75%, cover;
-        background-repeat: no-repeat, no-repeat;
-        background-position: center, center;
-        background-color: #f2faf6;
-        height: 100vh;
-        display:flex;
-        align-items: center;
-        z-index: 10;
-    } 
-
-}
-
 #python {
     background-image: url("images/forest-bg.png");
     background-size: cover;
@@ -195,31 +165,18 @@ nav {
     display:flex;
     align-items: center;
     z-index: 10;
-
-}
-#dashes {
-    background-image: url("images/background-dashes.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    display:flex;
-    z-index: 100;
-
 }
 
 #java{
     background-image: url("images/kitchen-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+
     background-position: center;
     background-color: #E2EDEE;
     height: 100vh;
     display: flex;
     align-items: center;
-    z-index: 10;
-    position: aboslute;
-    
 }
 
 #ruby{
@@ -231,21 +188,14 @@ nav {
     height: 100vh;
     display: flex;
     align-items: center;
-    position: aboslute;
 }
 
 .story-text img{
     display: block;
     margin: auto;
     max-width: 100%;
-    z-index: 25;
 }
 
-.story-img1, .story-img2, .story-img3 img{
-    float: right;
-    max-width: 100%;
-    position: relative;
-}
 
 .story-img img{
     float: right;
@@ -255,59 +205,36 @@ nav {
 .story-girl img{
     max-width: 100%;
 }
-
 .story-girl{
     position: -webkit-sticky; 
     position: sticky;
-    top: 27vh;
-    left: 75%;
-    z-index: 50;
+    top:10rem;
+    left:70rem;
+    z-index: 100;
     margin-top: 50vh;
 }
 
-.story-pin1{
-    /* position: -webkit-sticky; 
-    position: sticky; */
-    position: absolute;
-    top: 30%;
-    left: 75%;
-    z-index: 150;
+.story-pin-python, .story-pin-java, .story-pin-ruby, .animation1{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 35vh;
+    left: 2rem;
+    z-index: 100;
     margin-bottom: 100px;
 }
 
-.story-pin2{
-    /* position: -webkit-sticky; 
-    position: sticky; */
-    position: absolute;
-    top: 55%;
-    left: 75%;
-    z-index: 150;
-    margin-bottom: 100px;
-}
-
-.story-pin3{
-    /* position: -webkit-sticky; 
-    position: sticky; */
-    position: absolute;
-    top: 77%;
-    left: 75%;
-    z-index: 150;
-    margin-bottom: 100px;
-}
-
-.story-pin1 img, .story-pin2 img, .story-pin3 img{
-    width: 50px;
-    height: auto;
+.story-pin-python img, .story-pin-java img, .story-pin-ruby img{
     max-width: 100%;
-    z-index: 150;
+    z-index: 100;
 }
+
 
 .transition{
     position: relative;
     height: 50vh;
 }
 
-.transition-2{
+.transition-2 {
     height: 50vh;
 }
 
@@ -334,16 +261,15 @@ nav {
     border-radius: 28px;
     overflow: hidden;
     height: 400px;
-    position: absolute;
-    top: 40%;
-  
 }
-.circle{
-    max-width: 100%;
-    height: 318px;
-    width: auto;
-    z-index: 10;
+
+.circle {
+    width: 200px;
+    height: 90px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    margin:auto;
 }
+
 @media (max-width: 992px){
     .event-card{
         background-color: white;
@@ -353,14 +279,15 @@ nav {
         height: auto;
         overflow: hidden;
         margin: 50px;
-        top: 20%
     }
-
-        .circle{
+    
+    .circle {
+        width: 400px;
+        height: 180px;
         margin: auto;
-        margin-bottom: 100px;
-    }
+        margin-bottom: -100px;
 
+    }
 }
 
 @media (max-width: 768px){
@@ -370,14 +297,14 @@ nav {
         border-radius: 28px;
         overflow: hidden;
         margin: 50px;
-        top: 20%
     }
-
-    .circle{
-        margin: auto;
-        margin-bottom: 200px;
+    
+    .circle {
+        width:300px;
+        height: 150px;
+        margin:auto;
+        margin-bottom: -100px;
     }
-
 }
 
 @media (max-width: 576px){
@@ -389,13 +316,13 @@ nav {
         height: auto;
         margin: 20px;
     }
-
-    .circle{
-        margin: auto;
-        margin-bottom: 100px;
-    }
     
-
+    .circle {
+        width: 50%;
+        height: 70px;
+        margin:auto;
+        margin-bottom: -60px;
+    }
 }
 
 /*past highlights slider*/  
@@ -749,19 +676,17 @@ nav {
 footer{
     background-color: #FFF4F3;
     height: 400px;
-    background-image: url("images/footer1.png"), url("images/background-dashes.png");
+    background-image: url("images/footer.svg");
     background-size: 100%;
-    background-position: center, left top;
     background-repeat: no-repeat;
     padding: 100px 0px;
 }
 
 @media(max-width: 767px){
     footer{
-        height: 450px;
-        background-size: 210%;
+        height: 400px;
+        background-size: 100%;
         padding: 100px 50px;
-        background-position: bottom, left top;
     }
     
 }
