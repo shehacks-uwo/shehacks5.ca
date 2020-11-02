@@ -265,31 +265,10 @@ nav {
     margin-top: 50vh;
 }
 
-.story-pin1{
-    /* position: -webkit-sticky; 
-    position: sticky; */
-    position: absolute;
+.story-pin1, .story-pin2, .story-pin3{
+    position: -webkit-sticky; 
+    position: sticky;
     top: 30%;
-    left: 75%;
-    z-index: 150;
-    margin-bottom: 100px;
-}
-
-.story-pin2{
-    /* position: -webkit-sticky; 
-    position: sticky; */
-    position: absolute;
-    top: 55%;
-    left: 75%;
-    z-index: 150;
-    margin-bottom: 100px;
-}
-
-.story-pin3{
-    /* position: -webkit-sticky; 
-    position: sticky; */
-    position: absolute;
-    top: 77%;
     left: 75%;
     z-index: 150;
     margin-bottom: 100px;
