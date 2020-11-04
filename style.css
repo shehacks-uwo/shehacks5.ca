@@ -734,8 +734,26 @@ footer{
     background-repeat: no-repeat;
     padding: 100px 0px;
 }
-
+/* @media(max-width: 900px){
+    footer{
+        height: 450px;
+        background-size: 150%;
+        padding: 100px 50px;
+        background-position: bottom, left top;
+    }
+    
+} */
 @media(max-width: 767px){
+    footer{
+        height: 450px;
+        background-size: 150%;
+        padding: 100px 50px;
+        background-position: bottom, left top;
+    }
+    
+}
+
+@media(max-width: 500px){
     footer{
         height: 450px;
         background-size: 210%;
